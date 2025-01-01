@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+div nav {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+div img {
+  top:-500px;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+ h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  position:relative;
+  justify-content: center;
+  margin-top: 0%;
+  top: -300px;
+}
+
+div p {
+  border-radius: 25px;
+  background-clip: border-box;
+}
