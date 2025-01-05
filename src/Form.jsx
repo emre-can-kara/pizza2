@@ -1,15 +1,13 @@
 import { clear } from "@testing-library/user-event/dist/cjs/utility/clear.js";
 import { useState } from "react";
+import React from "react";
 
 function NameInput() {
   const [ad, setAd] = useState(""); // Kullanıcının adını tutan state
   const [error, setError] = useState(""); // Hata mesajı state
   const [textBolge, setTextBolge] = useState(""); // Textarea için state
-  const [pepperoniChecked, setPepperoniChecked] = useState(false);
-    const [domatesChecked, setDomatesChecked] = useState(false);
-    const [biberChecked, setBiberChecked] = useState(false);
-    const [sosisChecked, setSosisChecked] = useState(false);
-    const [secim, setSecim] = useState(0);
+  
+  
 
   
   const handleTextChange = (event) => {
@@ -51,8 +49,12 @@ function NameInput() {
     <form onSubmit={handleSubmit}>
      {/* Boyut seç  */ }
       <div className="pizzaSize" style={{marginTop:"20px"}}>
-      <h3 style={{height:"10px", marginBottom:"10px", display:"flex", flexDirection:"initial", position:"relative"}}> Boyut Seç </h3>
-        <div style={{display:"flex", flexDirection:"column", gap:"10px", position:"relative", right:"2rem", alignItems:"self-start", margin:"2rem"}}> 
+      <h3 style={{height:"10px", marginBottom:"10px", display:"flex", flexDirection:"initial", position:"relative",  }}> Boyut Seç </h3>
+        <div style={{display:"flex", flexDirection:"column", gap:"10px", position:"relative", right:"2rem", alignItems:"self-start", margin:"2rem", padding: "10px",
+              border: "1px solid #ddd",
+              borderRadius: "4px",
+              backgroundColor: "#fff",
+              cursor: "pointer",}}> 
       <label>
         <input type="radio" name="size" value="small" /> Küçük
       </label>
